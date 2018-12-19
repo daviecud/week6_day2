@@ -40,13 +40,13 @@ describe('Park', function() {
   });
 
   it('should be able to remove a dinosaur from its collection', function() {
-    // park.addDinosaur('Albert');
-    // park.addDinosaur('Terry');
-    // park.addDinosaur('Bob');
-    // park.removeDinosaur('Bob');
-    // const expected = ['Albert', 'Terry']
-    // const actual = park.dinosaurs;
-    // assert.deepStrictEqual(actual, expected);
+    park.addDinosaur('Albert');
+    park.addDinosaur('Terry');
+    park.addDinosaur('Bob');
+    park.removeDinosaur('Bob');
+    const expected = ['Albert', 'Terry']
+    const actual = park.dinosaurs;
+    assert.deepStrictEqual(actual, expected);
   });
 
   it('should be able to find the dinosaur that attracts the most visitors');
@@ -54,12 +54,6 @@ describe('Park', function() {
   it('should be able to find all dinosaurs of a particular species');
 
   it('should be able to remove all dinosaurs of a particular species', function() {
-    park.addDinosaur('Albert');
-    park.addDinosaur('Terry');
-    park.addDinosaur('Bob');
-    park.removeBySpecies(species);
-    const expected = 0;
-    assert.strictEqual(park.)
   });
 
 });

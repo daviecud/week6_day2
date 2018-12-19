@@ -26,9 +26,6 @@ Park.prototype.removeDinosaur = function(dinosaur) {
   this.dinosaurs.splice(indexOfDinosaurs, 2);
 }
 
-park.prototype.addBySpecies = function(species) {
-  this.dinosaurs.push(species);
 
-}
 
 module.exports = Park;

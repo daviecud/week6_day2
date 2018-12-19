@@ -18,7 +18,17 @@ Park.prototype.numberOfDinosaurs = function() {
 }
 
 Park.prototype.addDinosaur = function(dinosaur) {
-  this.dinosaurs.push(dinosaur)
+  this.dinosaurs.push(dinosaur);
+}
+
+Park.prototype.removeDinosaur = function(dinosaur) {
+  const indexOfDinosaurs = this.dinosaurs.indexOf(dinosaur);
+  this.dinosaurs.splice(indexOfDinosaurs, 2);
+}
+
+park.prototype.addBySpecies = function(species) {
+  this.dinosaurs.push(species);
+
 }
 
 module.exports = Park;

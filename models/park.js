@@ -4,8 +4,12 @@ const Park = function (name, ticket, dinosaur) {
   this.dinosaur = dinosaur;
 }
 
-Park.prototype.checkName = function() {
+Park.prototype.name = function() {
   return this.park.name;
+}
+
+Park.prototype.ticket = function() {
+  return this.park.ticket;
 }
 
 module.exports = Park;

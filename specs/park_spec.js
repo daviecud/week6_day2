@@ -13,7 +13,10 @@ describe('Park', function() {
     assert.strictEqual(actual, 'Dino\'s Dinosaurs');
   });
 
-  it('should have a ticket price',);
+  it('should have a ticket price', function (){
+    const actual = park.ticket;
+    assert.deepStrictEqual(actual, 15)
+  });
 
   it('should have a collection of dinosaurs');
 
